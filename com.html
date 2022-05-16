@@ -5,50 +5,86 @@
         <style>
             body {
                 background-color: rgb(250, 255, 107);
-                text-align: justify;
+                text-align: center;
                 font-family: 'calibri light';
             }
             h1 {
                 font-family: Georgia;
-                color: rgb(112, 0, 211);
-                text-align: center;
+                color: rgb(112, 0, 211);    
             }
             h2, h3 {
-                font-family: 'beachsunshine';
-                color: rgb(255, 0, 115);
-                margin-left: 20px;
+                font-family: broadway;
+                color: rgb(255, 0, 115);   
             }
             h3 {
                 color: rgb(0, 102, 255);
             }
             li {
-                font-family: Consolas;
-                color:#ff6a00
+                font-family: arial;
+                color: black;
+                margin-left: 30%;
+                margin-right: 30%;
+            }
+            ul li {
+                background-color: #30ba89;
+            }
+            ol {
+                list-style-type: upper-roman;
+            }
+            ol li {
+                background-color: #e09bfb;
             }
             img {
                 width: 190px; 
                 height: 250px; 
-                border: 4px #06f8a3;   
+                margin: auto;
             }
             p{
-                color: black;
+                color:black;
                 font-family: Consolas;
                 margin-left: 20px;
             }
+            header h1 {
+                margin: 0%
+            }
+            .figuras {
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+            }
+            .hey ul li{
+                list-style-type: circle;
+                background-color: transparent;
+            }
+            a:link {
+                text-decoration: none;
+                color: white;
+            }
+            a:visited {
+                color: rgb(10, 71, 44);
+            }
+            a:hover {
+                color:indigo;
+            }
+            a:active{
+                color: darkblue;
+            }
         </style>
-        <link rel="icon" href="img/icon.png" type="image/png">
+        <link rel="icon" href="icon.png" type="image/png">
     </head>
     <body>
         <header>
             <h1>Gabriela Prajo</h1>
         </header>
-        <p>Life is not so bad!</p>
-        <img src="img/travel.jpg" alt="travel">
-        <img src="img/art.jpg" alt="art">
-        <img src="img/frase.jpg" alt="sentence">
-        <img src="img/reading.jpg" alt="books">
-        <img src="img/Piano.jpg" alt="music">
-        <img src="img/painting.jpg" alt="painting">
+        <p style="background-color: rgba(255, 64, 0, 0.672); margin-left: 30%; margin-right: 30%; ">Life is not so bad!</p>
+        <section class="figuras">
+            <img src="travel.jpg" alt="travel">
+            <img src="art.jpg" alt="art">
+            <img src="frase.jpg" alt="sentence">
+            <img src="reading.jpg" alt="reading">
+            <img src="Piano.jpg" alt="piano">
+            <img src="painting.jpg" alt="painting">   
+        </section>
         <h2 id="hobbies">Meus hobbies</h2>
         <ul>
             <li>Ouvir música</li>
@@ -69,13 +105,13 @@
         <h3>Mini-playlist</h3>
         <ul>
             <li><a href="https://www.youtube.com/watch?v=nSDgHBxUbVQ" target="_blank">Photograph - Ed Sheeran</a></li>
-            <li><a href="https://www.youtube.com/watch?v=HQ1RzWof9Uk" target="_blank">I hate you, I love u - gnash ft. olivia o'brien (versão clean)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=HQ1RzWof9Uk" target="_blank">I hate u, I love u (versão clean)</a></li>
             <li><a href="https://www.youtube.com/watch?v=fKhdec3uyrQ" target="_blank">Forever - Lewis Capaldi</a></li>
             <li><a href="https://www.youtube.com/watch?v=sahsquWlw5I" target="_blank">Steal my girl - One Direction</a></li>
             <li><a href="https://www.youtube.com/watch?v=m6TXPNybrmk" target="_blank">Brother - Kodaline</a></li>
             <li><a href="https://www.youtube.com/watch?v=J9Zjgb03FMQ" target="_blank">Good things fall apart - ILLENIUM, Jon Bellion</a></li>
-            <li><a href="https://www.youtube.com/watch?v=wo4pWZApd2Y" target="_blank">Deixa acontecer - Grupo Revelação</a></li>
-            <li><a href="https://www.youtube.com/watch?v=qL9VDKaSO_s" target="_blank">Te assumi pro Brasil - Matheus & Kauan</a></li>
+            <li><a href="https://www.youtube.com/watch?v=wo4pWZApd2Y">Deixa acontecer - Grupo Revelação</a></li>
+            <li><a href="https://www.youtube.com/watch?v=qL9VDKaSO_s">Te assumi pro Brasil - Matheus & Kauan</a></li>
         </ul>
         <h3>Other pages</h3>
         <ul>
@@ -83,12 +119,14 @@
             <li><a href="firstcode.html">Meu primeiro site</a></li>
             <li><a href="quotes.html">Aperte e descobrirás</a></li>
         </ul>
-        <p style="font-size: xx-small;">Âncoras</p>
+        <br>
         <footer>
-            <ul>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#rotina">Rotina</a><br></li>
-            </ul>
+            <section class="hey">
+                <ul>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#rotina">Rotina</a><br></li>
+                </ul>
+            </section>
         </footer>
     </body>
 </html>
