@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="formulario1.css">
+        <title>Formulário CSS</title>
+        <link rel="icon" href="icon.png" type="image/png">
+    </head>
+    <body>
+        <h1 id="titulo">Nostalgia</h1>
+        <p>Preencha o formulário abaixo</p>
+        <form>
+            <div class="campo" id="box">
+                <input type="text" name="nome" placeholder="nome" required>
+                <select name="idade" required>
+                    <option selected disabled value="">idade</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="outra">outra</option>
+                </select><br>
+            </div>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <legend>Quais desenhos você já assistiu?</legend>
+                    <input type="checkbox" name="desenhos" value="brothers">Phineas e Ferb<br>
+                    <input type="checkbox" name="desenhos" value="gravity">Gravity Falls<br>
+                    <input type="checkbox" name="desenhos" value="adventure">O incrível mundo de Gumball<br>
+                    <input type="checkbox" name="desenhos" value="dora">Dora aventureira<br>
+                    <input type="checkbox" name="desenhos" value="mickey">A casa do Mickey Mouse<br>
+                    <input type="checkbox" name="desenhos" value="amigaozao">Meu Amigãozão<br>
+                    <input type="checkbox" name="desenhos" value="peixonauta">Peixonauta<br>
+                    <input type="checkbox" name="desenhos" value="backyardigans">Os Backyardigans<br>
+                    <input type="checkbox" name="desenhos" value="lazytown">Lazytown<br>
+                    <input type="checkbox" name="desenhos" value="caillou">Caillou<br>
+                    <input type="checkbox" name="desenhos" value="ballerina">Angelina Ballerina<br>
+                    <input type="checkbox" name="desenhos" value="bananas">Bananas de Pijamas<br>
+                    <input type="checkbox" name="desenhos" value="todos" checked>Todos (criança feliz que fala?)<br>
+                    <input type="checkbox" name="desenhos" value="nenhum">Nenhum (eu sinto muito pela sua infância)
+                </div>
+            </fieldset><br>
+            <fieldset class="grupo">
+                <div class="campo" id="canal">
+                    <legend>Qual é o melhor canal?</legend>
+                    <input type="radio" name="canais" value="gloob">Gloob
+                    <input type="radio" name="canais" value="disney">Disney Channel
+                    <input type="radio" name="canais" value="nick">Nickelodeon
+                    <input type="radio" name="canais" value="cartoon">Cartoon Network
+                    <input type="radio" name="canais" value="discovery">Discovery Kids
+                    <input type="radio" name="canais" value="outro" checked>Outro
+                </div>
+            </fieldset><br>
+            <button type="submit" value="enviar" class="botao">Concluído</button>
+        </form>
+    </body>
+</html>
