@@ -13,6 +13,22 @@
             color:chartreuse;;
             background-color: rgb(38, 38, 38);
         }
+        .img-thumbnail {
+            background-color: rgb(26, 124, 64);
+            border: 5px;
+        }
+        .bele a:link {
+                text-decoration: none;
+                color: white;
+            }
+        .bele a:visited{
+            text-decoration: none;
+            color:rgb(52, 33, 33);
+        }
+        .bele a:hover{
+            text-decoration: none;
+            color:rgb(30, 5, 191);
+        }
     </style>
   </head>
   <body class="text-center" style="background-color:rgb(184, 184, 184);">
@@ -20,7 +36,9 @@
         <header>
             <div class="container-lg">
                 <h1 style=" color: rgb(60, 56, 52)">Hi! I present to you my Bootstrap website</h1>
-                <p style="color:green;">I hope you enjoy it :)</p>
+                <div class="d-grid gap-2 col-md-3 mx-auto ">
+                    <button type="button" class="btn bele" style="background-color: rgb(55, 206, 25); color: white; margin-bottom: 3%;"><a href="#pr">I hope you enjoy it :)</a></button> 
+                </div>
             </div>
         </header>
         <div class="container card text-bg-dark p-3 row-cols-8">
@@ -40,7 +58,7 @@
             </div>
         </form>
         <br>
-        <div class=" container-sm card col-lg-11" style="background-color: rgb(13, 76, 13); color: rgb(255, 255, 255);">
+        <div id="principal" class="container-sm card col-lg-11" style="background-color: rgb(13, 76, 13); color: rgb(255, 255, 255);">
             <div class="card-body">
             <h3>Using some Pinterest photos and some mine, this is my life aesthetic:</h3>
             </div>
@@ -84,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="row col-lg-12 card-group" style="margin-left: 1%;">
+        <div id="principal"class="row col-lg-12 card-group" style="margin-left: 1%;">
             <div class="card text-bg-dark" style="width: 18rem; margin-left: 1%;">
                 <div class="card-header">
                     <small>Friendships</small>
@@ -138,14 +156,14 @@
                 </div>
             </footer>
         </form>
-    <div class="card row-cols-8" style="width: 20rem; margin-left: 42%; margin-top: 1%; margin-right: 45%;">
-            <img src="img/me.jpg" class="card-img-top" alt="me">
+        <div class="card row-cols-8" style="width: 22rem; margin-left: 34%; margin-top: 1%; margin-right: 45%;">
+            <img src="me.jpg" class="card-img-top img-thumbnail" alt="me"> 
             <div class="card-body">
-            <h5 class="card-title">Gabriela Prajo</h5>
-            <p class="card-text">Gabriela is an IFES student, she's 15 years old, lives in Brazil and created this website with a lot of effort and love.</p>
-            <a href="https://www.instagram.com/prajo.gabi2/" class="btn" style="background-color: green; color:white;">Instagram</a>
-            <a href="https://github.com/prajog" class="btn btn-dark">Github</a>
-            <a href="https://br.pinterest.com/gabiprajo/_saved/" class="btn" style="background-color: green; color:white;">Pinterest</a>
+                <h5 class="card-title">Gabriela Prajo</h5>
+                <p class="card-text">Gabriela is an IFES student, she's 15 years old, lives in Brazil and created this website with a lot of effort and love.</p>
+                <a href="https://www.instagram.com/prajo.gabi2/" target="_blank" class="btn" style="background-color: green; color:white;">Instagram</a>
+                <a href="https://github.com/prajog" target="_blank" class="btn btn-dark">Github</a>
+                <a href="https://br.pinterest.com/gabiprajo/_saved/" target="_blank" class="btn" style="background-color: green; color:white;">Pinterest</a>
             </div>
         </div>
     </div>
